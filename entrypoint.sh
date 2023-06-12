@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 # Define UUID and masquerade path, please modify it yourself. (Note: The masquerading path starts with / symbol, in order to avoid unnecessary trouble, please do not use special symbols.)
-UUID=${UUID:-'de04add9-5c68-8bab-950c-08cd5320df18'}
-VMESS_WSPATH=${VMESS_WSPATH:-'/vmess'}
-VLESS_WSPATH=${VLESS_WSPATH:-'/vless'}
-TROJAN_WSPATH=${TROJAN_WSPATH:-'/trojan'}
-SS_WSPATH=${SS_WSPATH:-'/shadowsocks'}
+UUID=${UUID:-'625d3519-14c8-4991-b9bd-d6d50e70cf9d'}
+VMESS_WSPATH=${VMESS_WSPATH:-'625d3519-14c8-4991-b9bd-d6d50e70cf9d'}
+VLESS_WSPATH=${VLESS_WSPATH:-'625d3519-14c8-4991-b9bd-d6d50e70cf9d'}
+TROJAN_WSPATH=${TROJAN_WSPATH:-'625d3519-14c8-4991-b9bd-d6d50e70cf9d'}
+SS_WSPATH=${SS_WSPATH:-'625d3519-14c8-4991-b9bd-d6d50e70cf9d'}
 sed -i "s#UUID#$UUID#g;s#VMESS_WSPATH#${VMESS_WSPATH}#g;s#VLESS_WSPATH#${VLESS_WSPATH}#g;s#TROJAN_WSPATH#${TROJAN_WSPATH}#g;s#SS_WSPATH#${SS_WSPATH}#g" config.json
 sed -i "s#VMESS_WSPATH#${VMESS_WSPATH}#g;s#VLESS_WSPATH#${VLESS_WSPATH}#g;s#TROJAN_WSPATH#${TROJAN_WSPATH}#g;s#SS_WSPATH#${SS_WSPATH}#g" /etc/nginx/nginx.conf
 
